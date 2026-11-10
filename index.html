@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>RAPALIGA — Playground oficial</title>
+<meta name="description" content="RAPALIGA: a linguagem esotérica inspirada no meme. Escreva, execute e transpile para Python no navegador."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#inicio">
+      <span class="brand-seal" aria-hidden="true">
+        <svg viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="48" rx="6" fill="#DE2910"/>
+          <g fill="#FFDE00">
+            <path d="M14.4 8l1.63 4.96h5.22l-4.22 3.07 1.62 4.97-4.25-3.08-4.25 3.08 1.62-4.97-4.22-3.07h5.22z"/>
+            <path d="M26 6.9l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(20 26 10)"/>
+            <path d="M30.8 12.7l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(45 30.8 15.8)"/>
+            <path d="M30 21.5l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(15 30 24.6)"/>
+            <path d="M24.1 27.1l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(-15 24.1 30.2)"/>
+          </g>
+        </svg>
+      </span>
+      <span class="brand-text"><strong>RAPALIGA</strong><small>playground oficial</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#playground">PLAYGROUND</a>
+      <a href="#documentacao">COMANDOS</a>
+      <a href="#exemplos">O MEME</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <header class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="kicker">v0.1 · linguagem esotérica brasileira <span class="han">中國風</span></span>
+        <h1 class="display"><span class="accent">RAPALIGA</span>, da China para o código.</h1>
+        <p>
+          Uma esolang baseada no meme da rapaliga. Escreva com <strong>VAI CHINA</strong>, declare variáveis com <strong>RAPALIGA</strong> e o marido será seu!
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#playground">▶ Testar agora</a>
+          <a class="btn" href="#documentacao">Ver comandos</a>
+        </div>
+        <div class="pills">
+          <span class="pill">Executa no navegador</span>
+          <span class="pill">Transpila para Python</span>
+          <span class="pill">Arquivo .rapaliga</span>
+          <span class="pill">Visual inspirado na China</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="moon-gate">
+          <div class="flag-wrap">
+            <svg viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="48" rx="6" fill="#DE2910"/>
+              <g fill="#FFDE00">
+                <path d="M14.4 8l1.63 4.96h5.22l-4.22 3.07 1.62 4.97-4.25-3.08-4.25 3.08 1.62-4.97-4.22-3.07h5.22z"/>
+                <path d="M26 6.9l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(20 26 10)"/>
+                <path d="M30.8 12.7l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(45 30.8 15.8)"/>
+                <path d="M30 21.5l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(15 30 24.6)"/>
+                <path d="M24.1 27.1l.7 2.13h2.24l-1.82 1.32.7 2.13-1.82-1.32-1.82 1.32.7-2.13-1.82-1.32h2.24z" transform="rotate(-15 24.1 30.2)"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="metrics">
+        <div class="metric"><strong>11</strong><span>comandos implementados</span></div>
+        <div class="metric"><strong>2</strong><span>formas de execução</span></div>
+        <div class="metric"><strong>.rapaliga</strong><span>extensão oficial</span></div>
+        <div class="metric"><strong>Python</strong><span>saída de transpilação</span></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="playground">
+    <div class="wrap">
+      <h2 class="section-title">Playground da RAPALIGA</h2>
+      <p class="sub">Escolha um exemplo, edite o código, execute e veja a saída. Se quiser, também dá para visualizar a versão gerada em Python.</p>
+      <div class="toolbar">
+        <select id="examples" aria-label="Escolher exemplo">
+          <option value="hello">01 · Hello World</option>
+          <option value="idade">02 · Maior de idade</option>
+          <option value="loop">03 · China vai vem</option>
+          <option value="soma">04 · Somador</option>
+        </select>
+        <button class="btn primary" id="run">▶ VAI CHINA — EXECUTAR</button>
+        <button class="btn" id="transpile">⇄ VER PYTHON</button>
+        <button class="btn" id="download">↓ BAIXAR .RAPALIGA</button>
+        <span class="mini">Atalho: Ctrl + Enter</span>
+      </div>
+      <div class="workbench">
+        <div class="editor-side">
+          <div class="panel-header">
+            <div class="header-left"><span>exemplo.rapaliga</span></div>
+            <span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>
+          </div>
+          <textarea class="code" id="editor" spellcheck="false" aria-label="Código RAPALIGA"></textarea>
+        </div>
+        <div class="console-side">
+          <div class="panel-header">
+            <span id="outputLabel">SAÍDA DO PROGRAMA</span>
+            <span class="status" id="status">PRONTO</span>
+          </div>
+          <pre class="out" id="output" aria-live="polite">Clique em VAI CHINA para executar.</pre>
+          <div class="stdin">
+            <label for="stdin">ENTRADA PADRÃO · Uma resposta por linha</label>
+            <textarea id="stdin" spellcheck="false" placeholder="Exemplo:&#10;19"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="documentacao">
+    <div class="wrap">
+      <div class="grid-2">
+        <div class="card">
+          <h3>Comandos da linguagem</h3>
+          <table class="reference">
+            <thead><tr><th>RAPALIGA</th><th>Equivalente</th></tr></thead>
+            <tbody>
+              <tr><td><code>VAI CHINA</code></td><td>Início do programa</td></tr>
+              <tr><td><code>NÃO QUELO SABE MAIS NADA</code></td><td>Fim do programa</td></tr>
+              <tr><td><code>RAPALIGA</code></td><td>Declara variável</td></tr>
+              <tr><td><code>EU FALA PLA ELE</code></td><td>Saída / print</td></tr>
+              <tr><td><code>AQUI RAPALIGA</code></td><td>Entrada / input</td></tr>
+              <tr><td><code>SE MALIDO MEU</code></td><td>if</td></tr>
+              <tr><td><code>TEM DOCUMENTO</code></td><td>else</td></tr>
+              <tr><td><code>EU CHINA VAI VEM</code></td><td>while</td></tr>
+              <tr><td><code>NÃO VOU DEIXA ELA ME MATA</code></td><td>break</td></tr>
+              <tr><td><code>TEM TUDO TEM</code></td><td>true</td></tr>
+              <tr><td><code>DEIXA PLA LÁ</code></td><td>false</td></tr>
+            </tbody>
+          </table>
+          <div class="badges">
+            <span class="badge">Operadores: + - * /</span>
+            <span class="badge">Comparações: == != &gt; &lt; &gt;= &lt;=</span>
+            <span class="badge">Lógicos: && e ||</span>
+          </div>
+        </div>
+        <div class="card meme-card" id="exemplos">
+          <div class="meme-heading"><span class="han-character" lang="zh-Hans">华</span><h3>O meme original</h3></div>
+          <figure class="meme-figure">
+            <img src="assets/rapaliga-meme.png" alt="Cena do meme RAPALIGA: mulher apontando e a legenda RAPALIGA" loading="lazy" />
+          </figure>
+          <div class="meme-decoration" aria-hidden="true"><span lang="zh-Hans">中国</span><span>✦</span><span lang="zh-Hans">语言</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap"><strong>RAPALIGA v0.1</strong> · playground web local · abra <code class="inline">index.html</code> para usar.</div>
+  </footer>
+</main>
+
+<script src="js/engine.js"></script>
+<script src="js/playground.js"></script>
+</body>
+</html>
